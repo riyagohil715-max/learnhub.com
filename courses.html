@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LearnHub | Courses</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+/* NAVBAR */
+.navbar {
+    background: #3498db;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.navbar a.active {
+    text-decoration: underline;
+}
+
+/* PAGE TITLE */
+.page-title {
+    background: #3498db;
+    color: white;
+    text-align: center;
+    padding: 45px 20px;
+}
+
+/* COURSES */
+.courses {
+    padding: 50px;
+    background: #f5f7fa;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.course-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 5px 12px rgba(0,0,0,0.1);
+}
+
+.course-img {
+    height: 140px;
+    border-radius: 8px;
+    color: white;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+/* GRADIENTS */
+.purple { background: linear-gradient(to right, #6a11cb, #2575fc); }
+.pink { background: linear-gradient(to right, #fc466b, #3f5efb); }
+.blue { background: linear-gradient(to right, #36d1dc, #5b86e5); }
+.orange { background: linear-gradient(to right, #f7971e, #ffd200); }
+.teal { background: linear-gradient(to right, #11998e, #38ef7d); }
+.gray { background: linear-gradient(to right, #bdc3c7, #2c3e50); }
+
+.tag {
+    display: inline-block;
+    background: #ecf0f1;
+    padding: 4px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.course-card h3 {
+    margin: 10px 0;
+}
+
+.course-card p {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.course-info {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.price {
+    color: green;
+}
+
+.course-card button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: #3498db;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.course-card button:hover {
+    background: #2980b9;
+}
+
+/* FOOTER */
+.footer {
+    background: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 25px 10px;
+}
+
+.footer-icons span {
+    color: #1abc9c;
+    font-weight: bold;
+}
+
+
+    </style>
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<header class="navbar">
+    <div class="logo">📘 LearnHub</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="courses.html" class="active">Courses</a>
+        <a href="enrolment.html">Enroll</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<!-- ================= PAGE TITLE ================= -->
+<section class="page-title">
+    <h1>📚 Available Courses</h1>
+    <p>Choose from our best professional learning programs</p>
+</section>
+
+<!-- ================= COURSES SECTION ================= -->
+<section class="courses">
+
+    <!-- Course 1 -->
+    <div class="course-card">
+        <div class="course-img purple">💻</div>
+        <span class="tag">Web Development</span>
+        <h3>Complete Web Development Course</h3>
+        <p>Learn HTML, CSS, JavaScript, and modern web technologies</p>
+        <div class="course-info">
+            <span>⏱ 12 Weeks</span>
+            <span class="price">₹2,999</span>
+        </div>
+        <button>📝 Enroll Now</button>
+    </div>
+
+    <!-- Course 2 -->
+    <div class="course-card">
+        <div class="course-img pink">🐍</div>
+        <span class="tag">Programming</span>
+        <h3>Python Programming Masterclass</h3>
+        <p>Master Python programming from basics to advanced concepts</p>
+        <div class="course-info">
+            <span>⏱ 10 Weeks</span>
+            <span class="price">₹2,499</span>
+        </div>
+        <button>📝 Enroll Now</button>
+    </div>
+
+    <!-- Course 3 -->
+    <div class="course-card">
+        <div class="course-img blue">📊</div>
+        <span class="tag">Data Science</span>
+        <h3>Data Science Fundamentals</h3>
+        <p>Learn data analysis, visualization, and ML basics</p>
+        <div class="course-info">
+            <span>⏱ 14 Weeks</span>
+            <span class="price">₹3,499</span>
+        </div>
+        <button>📝 Enroll Now</button>
+    </div>
+
+    <!-- Course 4 -->
+    <div class="course-card">
+        <div class="course-img orange">📱</div>
+        <span class="tag">Mobile Development</span>
+        <h3>Mobile App Development</h3>
+        <p>Build mobile apps for Android and iOS using React Native</p>
+        <div class="course-info">
+            <span>⏱ 12 Weeks</span>
+            <span class="price">₹3,999</span>
+        </div>
+        <button>📝 Enroll Now</button>
+    </div>
+
+    <!-- Course 5 -->
+    <div class="course-card">
+        <div class="course-img teal">🎨</div>
+        <span class="tag">Design</span>
+        <h3>UI/UX Design Complete Course</h3>
+        <p>Learn user interface & user experience design principles</p>
+        <div class="course-info">
+            <span>⏱ 8 Weeks</span>
+            <span class="price">₹2,799</span>
+        </div>
+        <button>📝 Enroll Now</button>
+    </div>
+
+    <!-- Course 6 -->
+    <div class="course-card">
+        <div class="course-img gray">🤖</div>
+        <span class="tag">AI & ML</span>
+        <h3>Artificial Intelligence Basics</h3>
+        <p>Introduction to AI, machine learning, and neural networks</p>
+        <div class="course-info">
+            <span>⏱ 10 Weeks</span>
+            <span class="price">₹4,499</span>
+        </div>
+        <button>📝 Enroll Now</button>
+    </div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+    <p>© 2024 <strong>LearnHub</strong>. All rights reserved</p>
+    <p class="footer-icons">
+        ✉️ <span>info@learnhub.com</span> |
+        📞 <span>+91 1234567890</span> |
+        📍 <span>India</span>
+    </p>
+</footer>
+
+</body>
+</html>

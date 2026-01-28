@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us - LearnHub</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    background:#2980b9;
+    color: #fff;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.navbar nav a.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Contact Section */
+.contact-section {
+    background: #f4f6f8;
+    padding: 50px 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    gap: 30px;
+}
+
+/* Left Info Box */
+.contact-info {
+    background: #fff;
+    padding: 30px;
+    width: 50%;
+    border-radius: 8px;
+}
+.info span{
+    display: block;
+    margin-bottom: 5px;
+}
+.contact-info h2 {
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.info-box {
+    margin-bottom: 15px;
+}
+
+.info-box h4 {
+    color: #3498db;
+    margin-bottom: 5px;
+}
+
+/* Right Form */
+.contact-form {
+    background: #fff;
+    padding: 30px;
+    width: 50%;
+    border-radius: 8px;
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form textarea {
+    height: 100px;
+    resize: none;
+}
+
+.contact-form button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 12px;
+    background: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background: #2980b9;
+}
+
+/* Footer */
+.footer {
+    background: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<header class="navbar">
+    <div class="logo">📘 LearnHub</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="enrolment.html">Enroll</a>
+        <a href="contact.html" class="active">Contact</a>
+    </nav>
+</header>
+
+<!-- Contact Section -->
+<section class="contact-section">
+    <div class="container">
+
+        <!-- Left Box -->
+        <div class="contact-info">
+    <h2 class="title">Get In Touch</h2>
+    <p class="subtitle">
+        Have questions? We'd love to hear from you.  
+        Send us a message and we’ll respond as soon as possible.
+    </p>
+
+    <div class="info-box">
+        <span class="icon"><h4>✉️Email</h4></span>
+        <div>
+            <p>info@learnhub.com<br>support@learnhub.com</p>
+        </div>
+    </div>
+
+    <div class="info-box">
+        <span class="icon"><h4>📞Phone</h4></span>
+        <div>
+            
+            <p>+91 1234567890<br>Mon–Fri: 9:00 AM – 6:00 PM</p>
+        </div>
+    </div>
+
+    <div class="info-box">
+        <span class="icon"> <h4>📍Address</h4></span>
+        <div>
+            <p>123 Education Street<br>Bangalore, Karnataka 560001</p>
+        </div>
+    </div>
+
+    <div class="info-box">
+        <span class="icon"><h4>⏰Business Hours</h4></span>
+        <div>
+            <p>
+                Monday – Friday: 9:00 AM – 6:00 PM<br>
+                Saturday: 10:00 AM – 4:00 PM
+            </p>
+        </div>
+    </div>
+</div>
+        <!-- Right Box -->
+        <div class="contact-form">
+            <h2>Send Us a Message</h2>
+            <form>
+                <label>Your Name</label>
+                <input type="text" placeholder="Enter your name">
+
+                <label>Your Email</label>
+                <input type="email" placeholder="Enter your email">
+
+                <label>Subject</label>
+                <select>
+                    <option>Select a subject</option>
+                    <option>Course Inquiry</option>
+                    <option>Technical Support</option>
+                    <option>General Question</option>
+                </select>
+
+                <label>Message</label>
+                <textarea placeholder="Write your message here"></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <p>© 2024 LearnHub. All rights reserved</p>
+    <p>Email: info@learnhub.com | Phone: +91 1234567890</p>
+</footer>
+
+</body>
+</html>
